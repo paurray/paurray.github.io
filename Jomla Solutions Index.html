@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joomla Solutions - Stop wasting money on Joomla extensions. Learn the Clean Slate Methodology from 30+ years of professional experience.">
+    <title>Joomla Solutions - Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Proza Libre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: #ffd89b;
+            font-weight: 500;
+        }
+        
+        .coming-soon {
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .value-props {
+            text-align: left;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+        
+        .value-prop {
+            margin-bottom: 25px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .value-prop::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ffd89b;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        
+        .value-prop strong {
+            color: #ffd89b;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .cta-section {
+            margin-top: 50px;
+        }
+        
+        .waitlist-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 30px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .waitlist-form input[type="email"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: #1e3c72;
+        }
+        
+        .waitlist-form input[type="email"]::placeholder {
+            color: rgba(30, 60, 114, 0.6);
+        }
+        
+        .waitlist-form button {
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            background: #ffd89b;
+            color: #1e3c72;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .waitlist-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(255, 216, 155, 0.4);
+        }
+        
+        .youtube-link {
+            margin-top: 30px;
+        }
+        
+        .youtube-link a {
+            color: #ffd89b;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+            padding-bottom: 2px;
+        }
+        
+        .youtube-link a:hover {
+            border-bottom-color: #ffd89b;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .value-props {
+                text-align: left;
+            }
+            
+            .waitlist-form {
+                flex-direction: column;
+            }
+            
+            .waitlist-form input[type="email"],
+            .waitlist-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Joomla.Solutions</div>
+        <div class="tagline">🚀 Professional Joomla Without the Bloat</div>
+        
+        <div class="coming-soon">
+            <p><strong>Something different is coming...</strong></p>
+            <p style="margin-top: 15px;">After 30+ years as a professional video editor and Apple Authorized Trainer, I've learned one thing: most people are solving problems they don't actually have.</p>
+        </div>
+        
+        <div class="value-props">
+            <div class="value-prop">
+                <strong>Unlock What You Already Have</strong>
+                <span>You keep buying extensions because nobody showed you what Core Joomla and the Astroid Framework can actually do. The power was there all along.</span>
+            </div>
+            
+            <div class="value-prop">
+                <strong>The Clean Slate Methodology</strong>
+                <span>Document once. Reuse forever. Escape the infinite loop of starting over.</span>
+            </div>
+            
+            <div class="value-prop">
+                <strong>No More Extension Graveyard</strong>
+                <span>Build like a pro who understands why things work. Not a perpetual beginner endlessly searching. Your search ends here.</span>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2 style="margin-bottom: 20px; font-size: 1.5rem;">Join the Waitlist</h2>
+            <p style="margin-bottom: 20px; color: rgba(255, 255, 255, 0.9);">Be the first to know when we launch. No spam, just value.</p>
+            
+            <form class="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="email" name="email" placeholder="your.email@example.com" required>
+                <button type="submit">Notify Me</button>
+            </form>
+            
+            <div class="youtube-link">
+                <p>In the meantime, check out:</p>
+                <p style="margin-top: 10px;">
+                    <a href="https://www.youtube.com/@Astroid-Joomla-Seamlessly" target="_blank" rel="noopener">
+                        📺 40+ Free Joomla Tutorials on YouTube →
+                    </a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Joomla.Solutions &copy; 2026</p>
+            <p style="margin-top: 10px;">Built with systematic precision. No unnecessary extensions.</p>
+        </div>
+    </div>
+</body>
+</html>
