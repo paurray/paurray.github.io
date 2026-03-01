@@ -14,81 +14,91 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Proza Libre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #ffffff;
+            font-family: 'Proza Libre', Georgia, serif;
+            background: #121212;
+            color: #94a3b8;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 800px;
             text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            background: #252525;
             padding: 60px 40px;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
         }
-        
+
         .logo {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 10px;
-            color: #ffffff;
+            color: #22ccbb;
         }
-        
+
         .tagline {
             font-size: 1.3rem;
             margin-bottom: 40px;
-            color: #ffd89b;
+            color: #44dd88;
             font-weight: 500;
         }
-        
+
         .coming-soon {
             font-size: 1.1rem;
             margin-bottom: 50px;
             line-height: 1.8;
-            color: rgba(255, 255, 255, 0.9);
+            color: #94a3b8;
         }
-        
+
+        .coming-soon strong {
+            color: #22ccbb;
+        }
+
         .value-props {
             text-align: left;
             margin: 40px auto;
             max-width: 600px;
         }
-        
+
         .value-prop {
             margin-bottom: 25px;
             padding-left: 30px;
             position: relative;
         }
-        
+
         .value-prop::before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #ffd89b;
+            color: #44dd88;
             font-weight: bold;
             font-size: 1.4rem;
         }
-        
+
         .value-prop strong {
-            color: #ffd89b;
+            color: #22ccbb;
             display: block;
             margin-bottom: 5px;
             font-size: 1.1rem;
         }
-        
+
         .cta-section {
             margin-top: 50px;
         }
-        
+
+        .cta-section h2 {
+            color: #22ccbb;
+        }
+
+        .cta-section > p {
+            color: #94a3b8;
+        }
+
         .waitlist-form {
             display: flex;
             gap: 10px;
@@ -97,64 +107,70 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         .waitlist-form input[type="email"] {
             flex: 1;
             min-width: 250px;
             padding: 15px 20px;
-            border: none;
-            border-radius: 50px;
+            border: 1px solid #3a3a3a;
+            border-radius: 4px;
             font-size: 1rem;
-            background: rgba(255, 255, 255, 0.9);
-            color: #1e3c72;
+            background: #3a3a3a;
+            color: #f8fafc;
+            font-family: 'Proza Libre', Georgia, serif;
         }
-        
+
         .waitlist-form input[type="email"]::placeholder {
-            color: rgba(30, 60, 114, 0.6);
+            color: #64748b;
         }
-        
+
         .waitlist-form button {
             padding: 15px 40px;
             border: none;
-            border-radius: 50px;
-            background: #ffd89b;
-            color: #1e3c72;
+            border-radius: 4px;
+            background: #22ccbb;
+            color: #121212;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: background 0.2s, box-shadow 0.2s;
+            font-family: 'Proza Libre', Georgia, serif;
         }
-        
+
         .waitlist-form button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(255, 216, 155, 0.4);
+            background: #1ab5a3;
+            box-shadow: 0 5px 20px rgba(34, 204, 187, 0.3);
         }
-        
+
         .youtube-link {
             margin-top: 30px;
         }
-        
+
         .youtube-link a {
-            color: #ffd89b;
+            color: #22ccbb;
             text-decoration: none;
             font-size: 1.1rem;
             border-bottom: 2px solid transparent;
             transition: border-color 0.3s;
             padding-bottom: 2px;
         }
-        
+
         .youtube-link a:hover {
-            border-bottom-color: #ffd89b;
+            border-bottom-color: #22ccbb;
         }
-        
+
         .footer {
             margin-top: 60px;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid #3a3a3a;
             font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.7);
+            color: #64748b;
         }
-        
+
+        .footer p {
+            color: #64748b;
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 20px 0;
@@ -162,7 +178,7 @@
                 align-items: center;
                 justify-content: center;
             }
-            
+
             .container {
                 padding: 30px 20px;
                 margin: 0 20px;
@@ -170,53 +186,53 @@
                 max-width: 100%;
                 overflow: hidden;
             }
-            
+
             .logo {
                 font-size: 1.4rem;
                 margin-bottom: 15px;
                 word-break: keep-all;
                 white-space: nowrap;
             }
-            
+
             .tagline {
                 font-size: 1.1rem;
                 margin-bottom: 30px;
             }
-            
+
             .coming-soon {
                 font-size: 1rem;
                 margin-bottom: 40px;
             }
-            
+
             .value-props {
                 text-align: left;
                 margin: 30px auto;
             }
-            
+
             .value-prop {
                 margin-bottom: 30px;
                 padding-left: 35px;
             }
-            
+
             .value-prop strong {
                 font-size: 1rem;
                 margin-bottom: 8px;
             }
-            
+
             .cta-section {
                 margin-top: 40px;
             }
-            
+
             .cta-section h2 {
                 font-size: 1.3rem !important;
             }
-            
+
             .waitlist-form {
                 flex-direction: column;
                 margin: 25px auto;
                 max-width: 70%;
             }
-            
+
             .waitlist-form input[type="email"],
             .waitlist-form button {
                 width: 100%;
@@ -226,15 +242,15 @@
                 font-size: 0.95rem;
                 box-sizing: border-box;
             }
-            
+
             .waitlist-form input[type="email"] {
-                border-radius: 40px;
+                border-radius: 4px;
             }
-            
+
             .youtube-link {
                 margin-top: 35px;
             }
-            
+
             .footer {
                 margin-top: 50px;
                 padding-top: 25px;
@@ -245,40 +261,40 @@
 <body>
     <div class="container">
         <div class="logo">Joomla.Solutions</div>
-        <div class="tagline">🚀 Professional Joomla Without the Bloat</div>
-        
+        <div class="tagline">Professional Joomla Without the Bloat</div>
+
         <div class="coming-soon">
             <p><strong>Something different is coming...</strong></p>
             <p style="margin-top: 15px;">After 30+ years as a professional video editor and Apple Authorized Trainer, I've learned one thing: most people go looking for solutions before realizing they already have them. Core Joomla and the Astroid Framework cover almost everything you'll ever need.<br><br>You just needed someone to show you how.</p>
         </div>
-        
+
         <div class="value-props">
             <div class="value-prop">
                 <strong>Unlock the Hidden Power of Core Joomla</strong>
                 <span>You'll be amazed how much more it can do out of the box.</span>
             </div>
-            
+
             <div class="value-prop">
                 <strong>The Clean Slate Methodology</strong>
                 <span>Start clean. Think smarter. Make it better every time.</span>
             </div>
-            
+
             <div class="value-prop">
                 <strong>No More Extensions Graveyard</strong>
                 <span>Know your tools. Skip the bloat. Almost everything you need is already here.</span>
             </div>
         </div>
-        
+
         <div class="cta-section">
             <h2 style="margin-bottom: 20px; font-size: 1.5rem;">Join the Waitlist</h2>
-            <p style="margin-bottom: 20px; color: rgba(255, 255, 255, 0.9);">Be the first to know when we launch. No spam, just value.</p>
-            
+            <p style="margin-bottom: 20px;">Be the first to know when we launch. No spam, just value.</p>
+
             <form class="waitlist-form" action="https://formspree.io/f/mlgwbbzl" method="POST">
                 <input type="hidden" name="_next" value="https://joomla.solutions">
                 <input type="email" name="email" placeholder="your.email@example.com" required>
                 <button type="submit">Notify Me</button>
             </form>
-            
+
             <div class="youtube-link">
                 <p>In the meantime, check out:</p>
                 <p style="margin-top: 10px;">
@@ -288,7 +304,7 @@
                 </p>
             </div>
         </div>
-        
+
         <div class="footer">
             <p>Joomla.Solutions &copy; 2026</p>
             <p style="margin-top: 10px;">Built with systematic precision. No unnecessary extensions.</p>
